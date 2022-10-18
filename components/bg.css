@@ -1,0 +1,10 @@
+ 
+html,
+body {
+    background-image: url("./bgm.jpg");
+    background-size: "cover";
+    height: 2024;
+    width: 824;
+   
+    background-repeat:no-repeat; 
+  }
