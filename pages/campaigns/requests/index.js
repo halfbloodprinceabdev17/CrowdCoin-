@@ -31,7 +31,8 @@ class RequestIndex extends Component{
         const {Header,Row,HeaderCell,Body}=Table;
         return (
             <Layout>
-                <h3><i>Requests!</i></h3>
+            <br></br>
+                <font color="white"><h3><i>Requests!</i></h3></font>
                 <Link route={`/campaigns/${this.props.address}/requests/new`}><a>
                 <Button primary floated='right' style={{ marginBottom: 10}}>Add Requests</Button>
                 </a></Link>
