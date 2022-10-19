@@ -51,7 +51,9 @@ class CampaignShow extends Component{
     render(){
        
         return  <Layout>
-            <h3>About this Campaign</h3>
+        <br></br>
+            <font  color="white"><h3>About this Campaign</h3></font>
+            <br></br>
             <Grid><Grid.Column width={10}>{this.renderCards()}
             <br></br> 
             <Link route={`/campaigns/${this.props.address}/requests`}><a>

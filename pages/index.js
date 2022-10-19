@@ -10,6 +10,7 @@ class CampaignIndex extends Component{
         const campaigns = await factory.methods.getDeployedCampaigns().call();
         return {campaigns};
     }
+ 
 renderCampaigns(){
     const items = this.props.campaigns.map(address =>{
         return{
@@ -23,18 +24,21 @@ return <Card.Group items={items}/>
 }
 
     render(){
-    return <Layout>
+    
+    return  <Layout>
     <div>
-    <h1><i><b>Open Campaigns</b></i></h1>
+    <font color='white'><h1><i><b>Open Campaigns</b></i></h1></font>
+    <br></br>
     <Link route='/campaigns/new'>
     <a><Button floated='right' content="Create Campaigns" 
     icon='add circle'
-    primary />
+    secondary />
     </a>
     </Link>
     {this.renderCampaigns()} 
     </div>
     </Layout>;
+   
     }
 }
 export default CampaignIndex;
