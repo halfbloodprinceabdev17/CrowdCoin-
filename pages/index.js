@@ -15,7 +15,7 @@ renderCampaigns(){
     const items = this.props.campaigns.map(address =>{
         return{
             header : address,
-            description : (<Link route={`/campaigns/${address}`}><a>See some nudes of parthib</a>
+            description : (<Link route={`/campaigns/${address}`}><a> hib</a>
             </Link>),
             fluid: true
     };
